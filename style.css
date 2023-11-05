@@ -1,0 +1,168 @@
+@font-face {
+    font-family:'icomoon' ;
+    src: url(/assets/fonts/icomoon.ttf);
+}
+*{
+    font-family: 'icomoon';
+}
+/*HEADER*/
+header{
+    height: 170px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    background-color: pink;
+}
+.nav-list{
+    
+}
+.logo{
+    width: 20%;
+}
+.language-container{
+    display: flex;
+    justify-content: right;
+}
+.language-txt{
+    padding: 0 15px;
+    color: grey;
+}
+.shop-icon{
+    width: 30px;
+    margin-right: 15px;
+}
+.menu-icon{
+    width: 30px;
+    margin-left: 10px;
+}
+/*MAIN*/
+.main-img{
+    max-width: 100%;
+}
+/*SECTION ITEM*/
+.tittle-items{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+.items{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center
+}
+.image{
+    width: 50%;
+    margin: 10px auto;
+}
+.item{
+    display: grid;
+    width: 25%;
+    height: 40%;
+}    
+.tittle-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -5px;
+    margin-top: auto;
+}
+.subtittle-div{
+    display: flex;
+    justify-content: center;
+    font-size: x-small;
+    color: grey;
+}
+/*FOOTER*/
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 30%;
+    margin-top: 100px;
+    margin-bottom: 45px;
+}
+.links-div{
+    display: grid;
+    color:gray
+}
+.link-tittle{
+    color: black;
+}
+.copyright{
+    color: gray;
+    border-top: 1px solid gray;
+}
+.copyright p{
+    margin-left: 20px;
+}
+/*MEDIA QUERIES*/
+@media screen and (max-width:480px){
+    .item{
+        width:60%;
+    }
+    .footer-container{
+        display: none;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav{
+        justify-content: space-between;
+    
+    }
+    .language-container{
+        justify-content: center;
+    }
+    .copyright{
+        display: none;
+    } 
+    .logo{
+        width: 50%;
+    }
+}
+@media screen and (min-width:481px) and (max-width:768px) {
+    .item{
+            width: 40%;
+        }
+    .footer-container{
+        display: none;
+    }
+    .nav-list{
+        display: none;
+            
+    }
+    .language-container{
+        justify-content: center;
+    }
+    header{
+        justify-content: center;
+    }
+    .copyright{
+        display: none;
+    } 
+    .logo{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1279px) {
+    .item{
+        width:30%;
+    }
+    .menu-icon{
+        display: none;
+    }
+}  
+
+@media screen and (min-width:1280px) {
+    .item{
+        width: 25%;
+    }
+    .menu-icon{
+            display: none;
+    }      
+}
